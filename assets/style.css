@@ -131,6 +131,13 @@ input{
 	margin-bottom: var(--size-1);
 }
 
+input:hover{
+	background-color: var(--color-light);
+	color: var(--color-dark);
+	width: 80vw;
+	height: 400px;
+}
+
 button{
 	padding: var(--size-1);
 	padding-left: var(--size-2);
