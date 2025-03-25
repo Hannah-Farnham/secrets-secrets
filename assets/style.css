@@ -42,6 +42,8 @@ p{
 	font-family: var(--font-2);
 }
 
+	/* Header Area */
+
 header{
 	margin-bottom: var(--size-2);
 	display: flex;
@@ -78,7 +80,7 @@ header{
 }
 
 .heading-container:nth-child(3):hover{
-	background: linear-gradient(to bottom, #CBEE87, #244839);
+	background: linear-gradient(to bottom, #CBEE87, #175e19);
 }
 
 .heading-container:nth-child(4):hover{
@@ -101,9 +103,13 @@ header{
 	border-right: var(--color-dark) 1px solid;
 }
 
+	/* Secrets Area */
+
 .secrets{
 	min-height: 80vh;
 }
+
+			/* Form  */
 
 form{
 	flex: auto;
@@ -138,9 +144,19 @@ button:hover{
 	color: var(--color-dark);
 }
 
+			/* Secrets  */
+
+.one-secret{
+	padding: var(--size-1);
+}
+
+	/*  Footer  */
+
 #footer{
 	padding: var(--size-1);
 }
+
+	/* Media Queries  */
 
 @media (min-width: 1200px) {
 	h1{
