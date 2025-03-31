@@ -39,32 +39,38 @@
 			</div>
 		</header>
 
-		<section class="secrets">
+		<section class="main-grid">
 
-			<label for="secret-label">ENTER</label>
-			<input type="text" id="wordInput" placeholder="Enter a Secret">
-			<button onclick="scrambleAndSave()">Release</button>
+			<section class="secrets">
+
+				<div class="form">
+					<label for="secret-label">ENTER</label>
+					<input type="text" id="wordInput" placeholder="Enter a Secret">
+					<button onclick="scrambleAndSave()">Release</button>
+				</div>
+
+				<ul id="secret-list"></ul>
+
+			</section>
 			
-			<ul id="secret-list"></ul>
+			<section class="questions">
+
+				<div class="form">
+					<label for="secret-label">ASK</label>
+					<input type="text" id="questionInput" placeholder="A Question">
+					<button onclick="generateAnswers()">Get Answers</button>
+				</div>
+
+				<ul id="answers-list"></ul>
+
+			</section>
+
+			<section id="footer">
+				<p>
+					Created by Hannah Farnham
+				</p>
+			</section>
 
 		</section>
-
-
-		<section class="questions">
-
-			<label for="secret-label">ASK</label>
-			<input type="text" id="questionInput" placeholder="A Question">
-			<button onclick="generateAnswers()">Get Answers</button>
-			
-			<ul id="answers-list"></ul>
-
-		</section>
-
-		<section id="footer">
-			<p>
-				Created by Hannah Farnham
-			</p>
-		</section>
-
 	</body>
 </html>
