@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="assets/reset.css" rel="stylesheet">
 		<link href="assets/style.css" rel="stylesheet">
+		<script defer src="script.js"></script>
 
 		<!-- Fonts -->
 		<link rel="stylesheet" href="https://use.typekit.net/nrc1sta.css">
@@ -39,34 +40,24 @@
 		</header>
 
 		<section class="secrets">
-			<form>
-				<label for="secret-label"> Enter</label>
-				<input type="text" id="secret" name="secret" placeholder="Your Secret">
-				<button type="submit">Purge</button>
-			</form>
+			
+			<label for="secret-label">Enter</label>
+			<input type="text" id="wordInput" placeholder="Enter a Secret">
+			<button onclick="scrambleAndSave()">Release</button>
+			
+			<ul id="secret-list"></ul>
 
-			<div class="one-secret">
-				<p>aigfr adfrg sfglj fgiewfargu ug dfhjdfk df jdf</p>
-			</div>
-			<div class="one-secret">
-				<p>afdgofkdf</p>
-			</div>
-			<div class="one-secret">
-				<p>dfvblofdg asfjdf</p>
-			</div>
 		</section>
 
 
-		<section class="question">
-			<form>
-				<label for="secret-label"> Ask</label>
-				<input type="text" id="question" name="question" placeholder="A Question">
-				<button type="submit">Inquire</button>
-			</form>
+		<section class="questions">
 
-			<div class="one-question">
-				<p>aofgvahf aufghiuad dufago fvaodf</p>
-			</div>
+			<label for="secret-label">Ask</label>
+			<input type="text" id="questionInput" placeholder="A question">
+			<button onclick="generateAnswers()">Get Answers</button>
+			
+			<ul id="answers-list"></ul>
+
 		</section>
 
 		<section id="footer">
