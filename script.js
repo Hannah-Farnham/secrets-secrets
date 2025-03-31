@@ -6,6 +6,9 @@ function scrambleWord(word) {
         .join('');
 }
 
+// Source: https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+// Source: https://javascript.info/array-methods#sort-fn
+
 // Function to scramble and save the word
 function scrambleAndSave() {
     let input = document.getElementById("wordInput").value.trim();
@@ -25,6 +28,8 @@ function scrambleAndSave() {
 }
 
 // Function to generate one random answer
+// Source: https://www.w3schools.com/js/js_random.asp
+
 function generateAnswers() {
     let input = document.getElementById("questionInput").value.trim();
     if (input === "") {
