@@ -400,7 +400,7 @@ button:hover{
 
 	#secrets-intro{
 		padding: var(--size-4);
-		height: 100vh;
+		height: 100%;
 	}
 
 	.form{
@@ -434,6 +434,7 @@ button:hover{
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		align-items: start;
+		height: 100vh;
 	}
 
 	input{
