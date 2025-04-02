@@ -21,6 +21,8 @@
 	--color-light: #ffffff;
 	--color-grey: #979797;
 	--color-lime: #C7FF82;
+	--color-medium-lime: #B2EB6A;
+	--color-dark-lime: #4D7818;
 
 	/* Fonts */
 
@@ -106,7 +108,7 @@ background-color:
 	align-items: center;
 	justify-content: center;
 	margin-bottom: var(--size-1);
-	background: radial-gradient(circle, #E74323, #46113E);
+	background: radial-gradient(circle, var(--color-lime), var(--color-medium-lime), var(--color-dark-lime));
 	padding: var(--size-4);
 	border-radius: 500px;
 	width: 343px;
@@ -122,8 +124,8 @@ label{
 
 input{
 	padding: var(--size-1);
-	/* border: var(--color-light) 1px solid; */
 	font-family: var(--font-3);
+	color: var(--color-dark);
 	text-transform: uppercase;
 	width: 300px;
 	margin-right: var(--size-1);
