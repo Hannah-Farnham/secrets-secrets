@@ -27,6 +27,10 @@
 	--font-3: "DM Mono", monospace;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body{
 	color: var(--color-light);
 }
@@ -37,6 +41,7 @@ h1{
 	font-size: var(--size-7);
 	color: var(--color-dark);
 	line-height: var(--size-6);
+	font-style: italic;
 }
 
 h3{
@@ -48,11 +53,6 @@ h3{
 
 p{
 	font-family: var(--font-2);
-}
-
-button{
-	background-color: var(--color-dark);
-	color: var(--color-light);
 }
 
 	/* Header Area */
@@ -85,17 +85,22 @@ button{
 }
 
 			/* Form  */
-.main-grid{
+#main-grid{
 background-color: 
 	var(--color-dark);
 }
 
 .form{
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: center;
 	justify-content: center;
 	margin-bottom: var(--size-1);
+	background: radial-gradient(circle, red, blue);
+	padding: var(--size-4);
+	border-radius: 500px;
+	width: 500px;
+	height: 500px;
 }
 
 label{
@@ -108,7 +113,8 @@ label{
 input{
 	padding: var(--size-1);
 	border: var(--color-light) 1px solid;
-	font-family: var(--font-2);
+	font-family: var(--font-3);
+	text-transform: uppercase;
 	width: 300px;
 	margin-right: var(--size-1);
 	margin-bottom: var(--size-1);
@@ -120,16 +126,33 @@ input:hover{
 }
 
 button{
+	font-family: var(--font-2);
 	padding: var(--size-1);
 	padding-left: var(--size-2);
 	padding-right: var(--size-2);
-	border: var(--color-light) 1px solid;
-	font-family: var(--font-2);
+	background-color: var(--color-dark);
+	color: var(--color-light);
+	border-radius: 8px;
+	transition: fill 0.3s ease-in-out;
+	cursor: pointer;
+	border: var(--color-dark) solid 1px;
+}
+
+.button-with-text{
+	svg{
+		padding-right: 8px;
+	}
 }
 
 button:hover{
 	background-color: var(--color-light);
+	border: var(--color-dark) solid 1px;
 	color: var(--color-dark);
+	svg{
+		path{
+			fill: var(--color-dark);
+		}
+	}
 }
 
 			/* Secrets  */
@@ -171,6 +194,7 @@ button:hover{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background-color: var(--color-dark);
 }
 
 .one-question{
@@ -233,23 +257,11 @@ button:hover{
 		grid-template-columns: repeat(2, 1fr);
 	}
 
-	.main-grid{
+	#main-grid{
 		padding-top: var(--size-2);
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		align-items: start;
-	}
-
-	.secrets{
-		border-right: var(--color-light) 2px solid;
-	}
-
-	.form{
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
-		margin-bottom: var(--size-1);
 	}
 
 	input{
