@@ -28,11 +28,11 @@
 // }
 
 const funnyResponses = [
-    { text: "Are you a wizard?", class: "wizard", img: "assets/images/cat-painting.jpg"},
-    { text: "This is classified information!", class: "classified" },
-    { text: "Oops! Now it’s encrypted!", class: "encrypted" },
-    { text: "Secret agent mode activated!", class: "agent" },
-    { text: "Shh... The walls have ears!", class: "secret" }
+    { text: "Are you a wizard?", class: "green", img: "assets/Images/cat-painting.jpg"},
+    { text: "This is classified information!", class: "yellow" },
+    { text: "Oops! Now it’s encrypted!", class: "orange" },
+    { text: "Secret agent mode activated!", class: "pink" },
+    { text: "Shh... The walls have ears!", class: "blue" }
 ];
 
 // Function to scramble a word
@@ -57,9 +57,11 @@ function scrambleAndSave() {
     let listItem = document.createElement("li");
     listItem.classList.add("entry");
     listItem.innerHTML = `
-        <h3 class="label">Your <em>hidden</em> secret</h3>
-        <h3>${scrambled}</h3>
-        <p class="response ${randomResponse.class}">${randomResponse.text}</p>
+         <p class="response ${randomResponse.class}">${randomResponse.text}</p>
+        <div>
+            <h3 class="label">Your <em>hidden</em> secret</h3>
+            <h3>${scrambled}</h3>
+        </div>
     `;
     historyList.appendChild(listItem);
     

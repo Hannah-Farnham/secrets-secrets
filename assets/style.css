@@ -20,9 +20,26 @@
 	--color-dark: #000000;
 	--color-light: #ffffff;
 	--color-grey: #979797;
+
 	--color-lime: #C7FF82;
 	--color-medium-lime: #B2EB6A;
 	--color-dark-lime: #4D7818;
+
+	--color-blue: #9DC1FF;
+	--color-medium-blue: #6EA3FF;
+	--color-dark-blue: #0B2F6E;
+
+	--color-pink: #FF91C8;
+	--color-medium-pink: #F561AB;
+	--color-dark-pink: #6F0D3E;
+
+	--color-yellow: #FFE959;
+	--color-medium-yellow: #FADE23;
+	--color-dark-yellow: #75670C;
+
+	--color-orange: #F86E58;
+	--color-medium-orange: #ED5A42;
+	--color-dark-orange: #841E0E;
 
 	/* Fonts */
 
@@ -213,38 +230,60 @@ button:hover{
 }
 
 #secret-list{
-	padding: var(--size-2);
+	padding: var(--size-1);
 	li{
-		color: var(--color-dark);
+		color: var(--color-light);
 		display: flex;
 		flex-direction: column;
 		gap: var(--size-1);
-		padding: var(--size-2);
+		padding-bottom: var(--size-4);
 		p{
 			font-family: var(--font-3);
 		}
 		em{
 			color: var(--color-grey);
 		}
+		h3{
+			color: var(--color-light);
+		}
 	}
 }
 
-.wizard {
-	display: inline-block;
+.green, .yellow, .pink, .orange, .blue {
 	height: fit-content;
-	padding: 12px;
-	background-color: var(--color-lime);
-	color: var(--color-dark);
+	width: fit-content;
+	padding: var(--size-1);
 	border-radius: 0px 12px 12px 12px;
+}
+
+.yellow{
+	background-color: var(--color-yellow);
+	color: var(--color-dark-yellow);
+}
+
+.green{
+	background-color: var(--color-lime);
+	color: var(--color-dark-lime);
+}
+
+.blue{
+	background-color: var(--color-blue);
+	color: var(--color-dark-blue);
+}
+
+
+.orange{
+	background-color: var(--color-orange);
+	color: var(--color-dark-orange);
+}
+
+.pink{
+	background-color: var(--color-pink);
+	color: var(--color-dark-pink);
 }
 
 .one-secret{
 	padding: var(--size-1);
-}
-
-#secrets-reveal{
-	background-color: var(--color-light);
-	height: 100vh;
 }
 
 	/* Question Area */
@@ -367,9 +406,21 @@ button:hover{
 		margin-bottom: var(--size-1);
 	}
 
+	#secrets-reveal{
+		grid-column: span 2;
+		padding: var(--size-4);
+		padding-top: 0px;
+	}
+
 	#secret-list{
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
+		padding: var(--size-2);
+		li{
+			color: var(--color-light);
+			display: flex;
+			flex-direction: row;
+		}
 	}
 
 	#secrets-form{
