@@ -57,6 +57,11 @@ body{
 	overscroll-behavior: none;
 }
 
+::selection {
+	background-color: var(--color-yellow); 
+	color: var(--color-dark-yellow); 
+  }
+
 h1{
 	font-family: var(--font-1);
 	font-weight: 900;
