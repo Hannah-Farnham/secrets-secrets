@@ -28,7 +28,7 @@
 // }
 
 const funnyResponses = [
-    { text: "Are you a wizard?", class: "wizard"},
+    { text: "Are you a wizard?", class: "wizard", img: "assets/images/cat-painting.jpg"},
     { text: "This is classified information!", class: "classified" },
     { text: "Oops! Now it’s encrypted!", class: "encrypted" },
     { text: "Secret agent mode activated!", class: "agent" },
@@ -57,7 +57,7 @@ function scrambleAndSave() {
     let listItem = document.createElement("li");
     listItem.classList.add("entry");
     listItem.innerHTML = `
-        <h3 class="label">my hidden secret</h3>
+        <h3 class="label">Your <em>hidden</em> secret</h3>
         <h3>${scrambled}</h3>
         <p class="response ${randomResponse.class}">${randomResponse.text}</p>
     `;

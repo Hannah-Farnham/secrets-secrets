@@ -219,8 +219,12 @@ button:hover{
 		display: flex;
 		flex-direction: column;
 		gap: var(--size-1);
+		padding: var(--size-2);
 		p{
 			font-family: var(--font-3);
+		}
+		em{
+			color: var(--color-grey);
 		}
 	}
 }
@@ -365,7 +369,7 @@ button:hover{
 
 	#secret-list{
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 	}
 
 	#secrets-form{
