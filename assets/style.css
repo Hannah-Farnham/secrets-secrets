@@ -246,6 +246,9 @@ button:hover{
 		h3{
 			color: var(--color-light);
 		}
+		.label{
+			color: var(--color-grey);
+		}
 	}
 }
 
