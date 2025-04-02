@@ -398,6 +398,13 @@ button:hover{
 
 		/* Secrets */
 
+	#main-grid{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		align-items: start;
+		min-height: 100vh;
+	}
+
 	#secrets-intro{
 		padding: var(--size-4);
 		height: 100%;
@@ -428,13 +435,6 @@ button:hover{
 
 	#secrets-form{
 		height: 100%;
-	}
-
-	#main-grid{
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		align-items: start;
-		height: 100vh;
 	}
 
 	input{
