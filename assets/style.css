@@ -122,7 +122,7 @@ label{
 
 input{
 	padding: var(--size-1);
-	border: var(--color-light) 1px solid;
+	/* border: var(--color-light) 1px solid; */
 	font-family: var(--font-3);
 	text-transform: uppercase;
 	width: 300px;
@@ -270,10 +270,13 @@ button:hover{
 
 #footer{
 	background-color: var(--color-dark);
-	padding: var(--size-4);
+	padding: var(--size-2);
 	overflow: hidden;
 	h1{
 		color: var(--color-light);
+		overflow: hidden; 
+		word-wrap: break-word; 
+		white-space: normal; 
 	}
 	.h3-small{
 		color: var(--color-grey);
@@ -282,7 +285,8 @@ button:hover{
 		color: var(--color-light);
 	}
 	img{
-		max-height: 300px;
+		height: 300px;
+		width: 300px;
 	}
 	a{
 		font-family: var(--font-3);
@@ -295,15 +299,16 @@ button:hover{
 #footer-row{
 	display: flex;
 	flex-direction: column;
-	gap: var(--size-4);
+	gap: var(--size-1);
 	margin-bottom: var(--size-2);
 	margin-top: var(--size-2);
 }
 
 #footer-images{
 	display: flex;
-	flex-direction: column;
 	gap: var(--size-1);
+	overflow-x: auto;
+	scrollbar-width: none; 
 }
 
 	/* Media Queries  */
@@ -364,6 +369,10 @@ button:hover{
 	}
 
 		/* Footer */
+
+	#footer{
+		padding: var(--size-4);
+	}
 
 	#footer-row{
 		flex-direction: row;
