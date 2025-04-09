@@ -1,4 +1,13 @@
 
+// // Sources: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor
+// https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+// https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement
+// https://www.youtube.com/watch?v=wiozYyXQEVk
+// https://www.youtube.com/watch?v=rVcphsUupws
+// https://www.youtube.com/watch?v=kOp5dcmutCk
+// https://www.youtube.com/watch?v=b0pxAb_yy2U
+
 
 const funnyResponses = [
     { text: "You should keep that to yourself.", class: "green", img: "assets/Images/cat-painting.jpg"},
@@ -9,13 +18,12 @@ const funnyResponses = [
 ];
 
 // Function to scramble a word
+
 function scrambleWord(word) {
     return word.split('').sort(() => Math.random() - 0.5).join('');
 }
 
 // Function to scramble and save the word
-// // Source: https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
-// // Source: https://javascript.info/array-methods#sort-fn
 
 function scrambleAndSave() {
     let input = document.getElementById("wordInput").value.trim();
