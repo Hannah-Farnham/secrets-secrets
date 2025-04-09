@@ -29,7 +29,7 @@ function scrambleAndSave() {
     let input = document.getElementById("wordInput").value.trim();
     if (input === "") {
         alert("Please enter a secret.");
-        return;
+      return;
     }
     
     let scrambled = scrambleWord(input);
@@ -57,33 +57,18 @@ document.getElementById("jumbleForm").addEventListener("submit", function(event)
     scrambleAndSave();
 });
 
+// const fixedEl = document.getElementById("sticky-secrets");
+// const trigger = document.getElementById("secrets-reveal");
 
-// Function to generate one random answer
-// Source: https://www.w3schools.com/js/js_random.asp
+// const observer = new IntersectionObserver((entries) => {
+//     entries.forEach(entry => {
+//       if (entry.isIntersecting) {
+//         fixedEl.classList.remove("visible");
+//       } else {
+//         fixedEl.classList.add("visible");
+//       }
+//     });
+//   });
 
-function generateAnswers() {
-    let input = document.getElementById("questionInput").value.trim();
-    if (input === "") {
-        alert("Please enter a question.");
-        return;
-    }
+// observer.observe(trigger);
 
-    let possibleAnswers = [
-        "It is certain", "Without a doubt", "It is decidedly so", "Try again later", "You may rely on it",
-        "As I see it, yes","Most likely","Outlook good",
-        "Absolutely", "Not a chance", "It’s uncertain", "Reply hazy, try again",
-        "Don't count on it", "Absolutely not", "My sources say no",
-        "Definitely", "I don’t think so", "Ask again later"
-    ];
-
-    let randomAnswer = possibleAnswers[Math.floor(Math.random() * possibleAnswers.length)];
-
-    let answersList = document.getElementById("answers-list");
-    answersList.innerHTML = ""; 
-
-    let listItem = document.createElement("li");
-    listItem.textContent = randomAnswer;
-    answersList.appendChild(listItem);
-
-    document.getElementById("questionInput").value = "";
-}
