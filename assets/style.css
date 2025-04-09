@@ -60,7 +60,7 @@ body{
 ::selection {
 	background-color: var(--color-yellow); 
 	color: var(--color-dark-yellow); 
-  }
+}
 
 h1{
 	font-family: var(--font-1);
@@ -267,6 +267,7 @@ button:hover{
 .yellow{
 	background-color: var(--color-yellow);
 	color: var(--color-dark-yellow);
+	background-image: url('assets/Images/Cat-wipe.svg');
 }
 
 .green{

@@ -1,38 +1,11 @@
-// // Function to scramble a word
-// function scrambleWord(word) {
-//     return word
-//         .split('')
-//         .sort(() => Math.random() - 0.5)
-//         .join('');
-// }
 
-// // Source: https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
-// // Source: https://javascript.info/array-methods#sort-fn
-
-// // Function to scramble and save the word
-// function scrambleAndSave() {
-//     let input = document.getElementById("wordInput").value.trim();
-//     if (input === "") {
-//         alert("Please enter a secret.");
-//         return;
-//     }
-    
-//     let scrambled = scrambleWord(input);
-//     let historyList = document.getElementById("secret-list");
-
-//     let listItem = document.createElement("li");
-//     listItem.textContent = scrambled;
-//     historyList.appendChild(listItem);
-
-//     document.getElementById("wordInput").value = "";
-// }
 
 const funnyResponses = [
-    { text: "Are you a wizard?", class: "green", img: "assets/Images/cat-painting.jpg"},
-    { text: "This is classified information!", class: "yellow" },
-    { text: "Oops! Now it’s encrypted!", class: "orange" },
-    { text: "Secret agent mode activated!", class: "pink" },
-    { text: "Shh... The walls have ears!", class: "blue" }
+    { text: "You should keep that to yourself.", class: "green", img: "assets/Images/cat-painting.jpg"},
+    { text: "As I see it, you're doomed.", class: "yellow" },
+    { text: "Why would you hide that? Tell everybody.", class: "orange" },
+    { text: "Very interesting...lol.", class: "pink" },
+    { text: "You should do something about that!", class: "blue" }
 ];
 
 // Function to scramble a word
@@ -41,6 +14,9 @@ function scrambleWord(word) {
 }
 
 // Function to scramble and save the word
+// // Source: https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+// // Source: https://javascript.info/array-methods#sort-fn
+
 function scrambleAndSave() {
     let input = document.getElementById("wordInput").value.trim();
     if (input === "") {
@@ -57,7 +33,7 @@ function scrambleAndSave() {
     let listItem = document.createElement("li");
     listItem.classList.add("entry");
     listItem.innerHTML = `
-         <p class="response ${randomResponse.class}">${randomResponse.text}</p>
+        <p class="response ${randomResponse.class}">${randomResponse.text}</p>
         <div>
             <h3 class="label">Your <em>hidden</em> secret</h3>
             <h3>${scrambled}</h3>
@@ -95,7 +71,7 @@ function generateAnswers() {
     let randomAnswer = possibleAnswers[Math.floor(Math.random() * possibleAnswers.length)];
 
     let answersList = document.getElementById("answers-list");
-    answersList.innerHTML = ""; // Clear previous answers
+    answersList.innerHTML = ""; 
 
     let listItem = document.createElement("li");
     listItem.textContent = randomAnswer;
