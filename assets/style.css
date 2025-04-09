@@ -254,16 +254,17 @@ button:hover{
 }
 
 #secret-list{
-	padding: var(--size-1);
-	border: var(--color-light) 1px solid;
-	margin: var(--size-1);
-	border-radius: 0px 12px 12px 12px;
+	padding-left: var(--size-1);
+	padding-right: var(--size-1);
 	li{
 		color: var(--color-light);
 		display: flex;
 		flex-direction: column;
+		margin-bottom: var(--size-1);
+		padding: var(--size-2);
+		border: var(--color-light) 1px solid;
+		border-radius: 0px 12px 12px 12px;
 		gap: var(--size-1);
-		padding-bottom: var(--size-4);
 		p{
 			font-family: var(--font-3);
 		}
@@ -272,6 +273,7 @@ button:hover{
 		}
 		h3{
 			color: var(--color-light);
+			padding: 0;
 		}
 		.label{
 			color: var(--color-grey);
@@ -454,16 +456,22 @@ button:hover{
 		grid-column: span 2;
 		padding: var(--size-4);
 		padding-top: 0px;
+		h3{
+			padding: 0;
+			padding-bottom: var(--size-1);
+		}
 	}
 
 	#secret-list{
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		padding: var(--size-2);
+		gap: var(--size-1);
+		padding: 0;
 		li{
 			color: var(--color-light);
 			display: flex;
 			flex-direction: row;
+			margin-bottom: 0;
 		}
 	}
 
