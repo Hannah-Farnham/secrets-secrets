@@ -249,7 +249,24 @@ button:hover{
 	height: 100vh;
 	h3{
 		color: var(--color-light);
-		padding: var(--size-1);
+	}
+	button{
+		margin-top: var(--size-1);
+		border: var(--color-light) solid 1px;
+	}
+}
+
+#reveal-title{
+	display: flex;
+	padding: var(--size-1);
+	#resetlink{
+		font-family: var(--font-1);
+		text-decoration: underline;
+		margin-left: 8px;
+		font-weight: 500;
+	}
+	#resetlink:hover{
+		color: var(--color-pink);
 	}
 }
 
@@ -317,6 +334,34 @@ button:hover{
 
 .one-secret{
 	padding: var(--size-1);
+}
+
+	/* Sticky Link */
+
+#sticky-secrets{
+	position: fixed;
+	bottom: 0px;
+	margin: 8px;
+	display: flex;
+	gap: 8px;
+	button{
+		margin: 0;
+		color: var(--color-dark);
+		background-color: var(--color-lime);
+		border: var(--color-dark) solid 1px;
+		padding: 12px;
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+	button:hover{
+		background-color: var(--color-medium-lime);
+	}
+	#Question-button{
+		background-color: var(--color-pink);
+	}
+	#Question-button:hover{
+		background-color: var(--color-medium-pink);
+	}
 }
 
 	/* Question Area */
@@ -462,6 +507,13 @@ button:hover{
 		}
 	}
 
+	#reveal-title{
+		#resetlink{
+			margin-left: var(--size-1);
+			margin-top: 1px;
+		}
+	}
+
 	#secret-list{
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
@@ -481,6 +533,13 @@ button:hover{
 
 	input{
 		margin-bottom: 0;
+	}
+
+		/* Sticky Link */
+
+	#sticky-secrets{
+		bottom: var(--size-1);
+		right: var(--size-1);
 	}
 
 		/* Footer */
