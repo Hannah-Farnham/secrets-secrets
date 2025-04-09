@@ -257,6 +257,7 @@ button:hover{
 	padding: var(--size-1);
 	border: var(--color-light) 1px solid;
 	margin: var(--size-1);
+	border-radius: 0px 12px 12px 12px;
 	li{
 		color: var(--color-light);
 		display: flex;
