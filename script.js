@@ -63,10 +63,14 @@ function scrambleAndSave() {
     let listItem = document.createElement("li");
     listItem.classList.add("entry");
     listItem.innerHTML = `
+        <div class="character-bubble">
             <div class="response-image ${randomResponse.class}">
-                <img src="${randomResponse.img}" alt="cat-image" class="response-img" />
+                <img src="${randomResponse.img}" alt="cat-image" class="response-img"/>
             </div>
-            <p class="response ${randomResponse.class}">${randomResponse.text}</p>
+            <div class="response-text">
+                 <p class="response ${randomResponse.class}">${randomResponse.text}</p>
+            </div>
+        </div>
         <div>
             <h3 class="label">Your <em>hidden</em> secret</h3>
             <h3>${scrambled}</h3>

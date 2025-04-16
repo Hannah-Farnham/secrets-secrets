@@ -279,8 +279,7 @@ button:hover{
 		display: flex;
 		flex-direction: column;
 		margin-bottom: var(--size-1);
-		padding: var(--size-2);
-		border: var(--color-light) 1px solid;
+		padding: var(--size-1);
 		border-radius: 0px 12px 12px 12px;
 		gap: var(--size-1);
 		p{
@@ -338,23 +337,31 @@ button:hover{
 	padding: var(--size-1);
 }
 
-.response-container{
-	display: flex;
-	flex-direction: column;
-}
-
 .response-image{
 	padding: 0;
 	background-color: 0;
 	overflow: hidden;
 	border-radius: 300px;
-	aspect-ratio: 1 / 1;
-	width: 96px;
+	width: 112px;
+	height: 112px;
 	img{
-		height: 100%;
-		width: 100%;
-		object-fit: cover;
+		max-width: 100%;
+		max-height: 100%;
+		object-fit: contain;
 	}
+}
+
+.response-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 100%;
+}
+
+.character-bubble{
+	display: flex;
+	flex-direction: row;
+	gap: var(--size-1);
 }
 
 	/* Sticky Link */
@@ -561,7 +568,7 @@ button:hover{
 		li{
 			color: var(--color-light);
 			display: flex;
-			flex-direction: row;
+			flex-direction: column;
 			margin-bottom: 0;
 		}
 	}
