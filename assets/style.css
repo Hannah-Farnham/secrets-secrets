@@ -470,7 +470,18 @@ button:hover{
 	gap: var(--size-1);
 	overflow-x: auto;
 	scrollbar-width: none; 
+	img, video{
+		filter: grayscale(100%);
+		transition: filter 0.3s ease;
+	}
+	img:hover {
+		filter: grayscale(0%);
+	}
+	video:hover{
+		filter: grayscale(0%);
+	}
 }
+
 
 	/* Media Queries  */
 

@@ -7,6 +7,7 @@
 // https://www.youtube.com/watch?v=rVcphsUupws
 // https://www.youtube.com/watch?v=kOp5dcmutCk
 // https://www.youtube.com/watch?v=b0pxAb_yy2U
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse
 
 // Array to genereate a random response
 
