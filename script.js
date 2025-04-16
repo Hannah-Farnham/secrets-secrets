@@ -11,17 +11,17 @@
 // Array to genereate a random response
 
 const secretResponses = [
-    { text: "Tell it to a plant and see if it wilts.", class: "green", img: "assets/Images/cat-painting.jpg" },
-    { text: "The universe knows… but won’t tell.", class: "green", img: "assets/Images/cat-painting.jpg"  },
-    { text: "Do not say that at brunch.", class: "yellow", img: "assets/Images/cat-painting.jpg"  },
+    { text: "Tell it to a plant and see if it wilts.", class: "green", img: "assets/Images/blue-cat.png" },
+    { text: "The universe knows… but won’t tell.", class: "green", img: "assets/Images/blue-cat.png"  },
+    { text: "Do not say that at brunch.", class: "yellow", img: "assets/Images/blue-cat.png"  },
     { text: "Burn the evidence. Then burn it again.", class: "yellow", img: "assets/Images/cat-painting.jpg"  },
     { text: "Keep it buried—deep.", class: "orange", img: "assets/Images/cat-painting.jpg"  },
     { text: "You’re gonna need a lawyer and a priest.", class: "orange", img: "assets/Images/cat-painting.jpg"  },
     { text: "The spirits are conflicted.", class: "pink", img: "assets/Images/cat-painting.jpg"  },
     { text: "Put that one in rice.", class: "pink", img: "assets/Images/cat-painting.jpg"  },
-    { text: "You should whisper that to the moon.", class: "blue", img: "assets/Images/cat-painting.jpg"  },
-    { text: "Ask yourself: will this still matter in a year?", class: "blue", img: "assets/Images/cat-painting.jpg"  },
-    { text: "Truth is powerful—but timing is everything.", class: "blue", img: "assets/Images/cat-painting.jpg"  }
+    { text: "You should whisper that to the moon.", class: "blue", img: "assets/Images/blue-cat.png"  },
+    { text: "Ask yourself: will this still matter in a year?", class: "blue", img: "assets/Images/blue-cat.png"  },
+    { text: "Truth is powerful—but timing is everything.", class: "blue", img: "assets/Images/blue-cat.png"  }
 ];
 
 // These are my different secret responses. "secretResponses" is an array and it's full of objects, which are the different responses someone can get when they enter a secret into the form. 

@@ -439,6 +439,10 @@ button:hover{
 		height: 250px;
 		width: 250px;
 	}
+	video{
+		height: 250px;
+		width: 250px;
+	}
 	a{
 		font-family: var(--font-3);
 		text-decoration: underline;
