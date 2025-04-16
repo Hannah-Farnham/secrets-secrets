@@ -8,14 +8,23 @@
 // https://www.youtube.com/watch?v=kOp5dcmutCk
 // https://www.youtube.com/watch?v=b0pxAb_yy2U
 
+// Array to genereate a random response
 
-const funnyResponses = [
-    { text: "You should keep that to yourself.", class: "green", img: "assets/Images/cat-painting.jpg"},
-    { text: "As I see it, you're doomed.", class: "yellow" },
-    { text: "Why would you hide that? Tell everybody.", class: "orange" },
-    { text: "Very interesting...lol.", class: "pink" },
-    { text: "You should do something about that!", class: "blue" }
+const secretResponses = [
+    { text: "Tell it to a plant and see if it wilts.", class: "green", img: "assets/Images/cat-painting.jpg" },
+    { text: "The universe knows… but won’t tell.", class: "green", img: "assets/Images/cat-painting.jpg"  },
+    { text: "Do not say that at brunch.", class: "yellow", img: "assets/Images/cat-painting.jpg"  },
+    { text: "Burn the evidence. Then burn it again.", class: "yellow", img: "assets/Images/cat-painting.jpg"  },
+    { text: "Keep it buried—deep.", class: "orange", img: "assets/Images/cat-painting.jpg"  },
+    { text: "You’re gonna need a lawyer and a priest.", class: "orange", img: "assets/Images/cat-painting.jpg"  },
+    { text: "The spirits are conflicted.", class: "pink", img: "assets/Images/cat-painting.jpg"  },
+    { text: "Put that one in rice.", class: "pink", img: "assets/Images/cat-painting.jpg"  },
+    { text: "You should whisper that to the moon.", class: "blue", img: "assets/Images/cat-painting.jpg"  },
+    { text: "Ask yourself: will this still matter in a year?", class: "blue", img: "assets/Images/cat-painting.jpg"  },
+    { text: "Truth is powerful—but timing is everything.", class: "blue", img: "assets/Images/cat-painting.jpg"  }
 ];
+
+// These are my different secret responses. "secretResponses" is an array and it's full of objects, which are the different responses someone can get when they enter a secret into the form. 
 
 // Function to scramble a word
 
@@ -33,14 +42,17 @@ function scrambleAndSave() {
     }
     
     let scrambled = scrambleWord(input);
-    let randomIndex = Math.floor(Math.random() * funnyResponses.length);
-    let randomResponse = funnyResponses[randomIndex];
+    let randomIndex = Math.floor(Math.random() * secretResponses.length);
+    let randomResponse = secretResponses[randomIndex];
 
     let historyList = document.getElementById("secret-list");
     
     let listItem = document.createElement("li");
     listItem.classList.add("entry");
     listItem.innerHTML = `
+        <div class="response-image ${randomResponse.class}">
+            <img src="${randomResponse.img}" alt="cat-image" class="response-img" />
+        </div>
         <p class="response ${randomResponse.class}">${randomResponse.text}</p>
         <div>
             <h3 class="label">Your <em>hidden</em> secret</h3>
@@ -56,19 +68,4 @@ document.getElementById("jumbleForm").addEventListener("submit", function(event)
     event.preventDefault();
     scrambleAndSave();
 });
-
-// const fixedEl = document.getElementById("sticky-secrets");
-// const trigger = document.getElementById("secrets-reveal");
-
-// const observer = new IntersectionObserver((entries) => {
-//     entries.forEach(entry => {
-//       if (entry.isIntersecting) {
-//         fixedEl.classList.remove("visible");
-//       } else {
-//         fixedEl.classList.add("visible");
-//       }
-//     });
-//   });
-
-// observer.observe(trigger);
 

@@ -337,6 +337,20 @@ button:hover{
 	padding: var(--size-1);
 }
 
+.response-image{
+	padding: 0;
+	background-color: 0;
+	overflow: hidden;
+	border-radius: 300px;
+	aspect-ratio: 1 / 1;
+	width: 144px;
+	img{
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+}
+
 	/* Sticky Link */
 
 #sticky-secrets{
