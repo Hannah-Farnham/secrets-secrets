@@ -77,6 +77,8 @@ function scrambleAndSave() {
         </div>
     `;
     historyList.appendChild(listItem);
+
+    listItem.scrollIntoView({ behavior: 'smooth', block: 'start' });
     
     document.getElementById("wordInput").value = "";
 }
