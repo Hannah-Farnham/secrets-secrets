@@ -180,11 +180,6 @@ button{
 	border: var(--color-dark) solid 1px;
 }
 
-button:disabled {
-	opacity: 0.5;
-	cursor: not-allowed;
-}
-
 .button-with-text{
 	svg{
 		padding-right: 8px;
@@ -248,10 +243,11 @@ button:hover{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	z-index: 1002;
 }
 
 #secrets-reveal{
-	height: 80vh;
+	min-height: 80vh;
 	h3{
 		color: var(--color-light);
 	}
@@ -279,8 +275,6 @@ button:hover{
 		display: flex;
 		flex-direction: column;
 		margin-bottom: var(--size-1);
-		padding: var(--size-1);
-		border-radius: 0px 12px 12px 12px;
 		gap: var(--size-1);
 		p{
 			font-family: var(--font-3);
@@ -364,16 +358,29 @@ button:hover{
 	gap: var(--size-1);
 }
 
+.fade-in {
+	opacity: 0;
+	transform: translateY(10px);
+	animation: fadeInUp 3s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+	to {
+	opacity: 3;
+	transform: translateY(3);
+	}
+}
+
 	/* Sticky Link */
 
 #sticky-secrets{
 	position: fixed;
-	bottom: 0px;
-	right: 0px;
-	margin: 8px;
-	display: flex;
-	gap: 8px;
-	z-index: 10000;
+	bottom: 12px;
+	right: 12px;
+	display: none;
+	opacity: 0;
+	z-index: 1000;
+	transition: opacity 0.3s ease;
 	button{
 		margin: 0;
 		color: var(--color-dark);
@@ -384,14 +391,13 @@ button:hover{
 		padding-right: 12px;
 	}
 	button:hover{
-		background-color: var(--color-grey);
+		background: radial-gradient(circle, var(--color-lime), var(--color-medium-lime), var(--color-dark-lime));
 	}
-	#Question-button{
-		background-color: var(--color-light-grey);
-	}
-	#Question-button:hover{
-		background-color: var(--color-grey);
-	}
+}
+
+#sticky-secrets.show {
+	display: block;
+	opacity: 1;
 }
 
 	/*  Footer  */
@@ -459,8 +465,8 @@ button:hover{
 @media (min-width: 768px) {
 
 	h1{
-		font-size: var(--size-10);
-		line-height: var(--size-9);
+		font-size: var(--size-8);
+		line-height: var(--size-7);
 	}
 
 	h2{
@@ -523,7 +529,7 @@ button:hover{
 
 	#secret-list{
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(2, 1fr);
 		gap: var(--size-1);
 		padding: 0;
 		li{
@@ -564,6 +570,21 @@ button:hover{
 		display: flex;
 		flex-direction: row;
 	}
+}
+
+
+@media (min-width: 1100px) {
+
+	h1{
+		font-size: var(--size-10);
+		line-height: var(--size-9);
+	}
+
+	#secret-list{
+		grid-template-columns: repeat(3, 1fr);
+		gap: var(--size-6);
+	}
+
 }
 
 

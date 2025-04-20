@@ -12,22 +12,28 @@
 // Array to genereate a random response
 
 const secretResponses = [
-    { text: "Tell it to a plant and see if it wilts.", class: "green", img: "assets/Images/neutral-cat.png" },
-    { text: "The universe knows… but won’t tell.", class: "green", img: "assets/Images/neutral-cat.png"  },
-    { text: "Text it to yourself. Schedule it to send next Tuesday. Reflect.", class: "green", img: "assets/Images/neutral-cat.png"  },
-    { text: "Do not say that at brunch.", class: "yellow", img: "assets/Images/yellow-cat.png"  },
-    { text: "Whisper it into your pillow. Then flip the pillow and move on.", class: "yellow", img: "assets/Images/yellow-cat.png"  },
-    { text: "Write it on a sticky note. Burn the note. Dance around the ashes.", class: "yellow", img: "assets/Images/yellow-cat.png"  },
-    { text: "Keep it buried—deep.", class: "orange", img: "assets/Images/orange-cat.png"  },
-    { text: "You’re allowed to rewrite the story.", class: "orange", img: "assets/Images/orange-cat.png"  },
-    { text: "You’re gonna need a lawyer and a priest.", class: "orange", img: "assets/Images/orange-cat.png"  },
-    { text: "The spirits are conflicted.", class: "pink", img: "assets/Images/pink-cat.png"  },
-    { text: "Say it in a British accent. Suddenly less scary, right?", class: "pink", img: "assets/Images/pink-cat.png"  },
-    { text: "Put that one in rice.", class: "pink", img: "assets/Images/pink-cat.png"  },
-    { text: "This might be your sign to open up—just a little.", class: "pink", img: "assets/Images/pink-cat.png"  },
-    { text: "You should whisper that to the moon.", class: "blue", img: "assets/Images/blue-cat.png"  },
-    { text: "Ask yourself: will this still matter in a year?", class: "blue", img: "assets/Images/blue-cat.png"  },
-    { text: "Truth is powerful—but timing is everything.", class: "blue", img: "assets/Images/blue-cat.png"  }
+    { text: "Text it to yourself. Schedule it to send next Tuesday. Reflect.", class: "green", img: "assets/Images/Personas/cat-green-1.png" },
+    { text: "Let it marinate. If it still matters tomorrow, we’ll talk.", class: "green", img: "assets/Images/Personas/cat-green-2.png"  },
+    { text: "Put that one in rice.", class: "green", img: "assets/Images/Personas/cat-green-3.png"  },
+
+    { text: "Say it in a British accent. Suddenly less scary, right?", class: "yellow", img: "assets/Images/Personas/cat-yellow-1.png"  },
+    { text: "Write it on a sticky note. Burn the note. Dance around the ashes.", class: "yellow", img: "assets/Images/Personas/cat-yellow-2.png"  },
+    { text: "You didn’t just spill tea—you opened a whole café.", class: "yellow", img: "assets/Images/Personas/cat-yellow-3.png"  },
+
+    { text: "Keep it buried—deep.", class: "orange", img: "assets/Images/Personas/cat-orange-1.png"  },
+    { text: "Do not say that at brunch!", class: "orange", img: "assets/Images/Personas/cat-orange-2.png"  },
+    { text: "Slam it in the vault and throw the vault in the ocean.", class: "orange", img: "assets/Images/Personas/cat-orange-3.png"  },
+
+    { text: "Okay wow. I need a nap and a drink.", class: "pink", img: "assets/Images/Personas/cat-pink-1.png"  },
+    { text: "You’re gonna need a lawyer and a priest.", class: "pink", img: "assets/Images/Personas/cat-pink-2.png"  },
+    { text: "You need a burner phone and a new haircut.", class: "pink", img: "assets/Images/Personas/cat-pink-3.png"  },
+    { text: "My eyebrows are in orbit.", class: "pink", img: "assets/Images/Personas/cat-pink-1.png"  },
+    { text: "You need to get ahead of this. Or behind it. Or beneath a blanket.", class: "pink", img: "assets/Images/Personas/cat-pink-2.png"  },
+
+    { text: "You should whisper that to the moon.", class: "blue", img: "assets/Images/Personas/cat-blue-1.png"  },
+    { text: "Whisper it into your pillow. Then flip the pillow and move on.", class: "blue", img: "assets/Images/Personas/cat-blue-2.png"  },
+    { text: "This might be your sign to open up—just a little.", class: "blue", img: "assets/Images/Personas/cat-blue-3.png"  },
+    { text: "Tell your plant, see if it wilts.", class: "blue", img: "assets/Images/Personas/cat-blue-1.png"  },
 ];
 
 // These are my different secret responses. "secretResponses" is an array and it's full of objects, which are the different responses someone can get when they enter a secret into the form. 
@@ -59,9 +65,14 @@ function scrambleAndSave() {
 //This picks a random answer from the secretResponses list  
 
     let historyList = document.getElementById("secret-list");
-    
+
+    let oldNewest = historyList.querySelector(".newest");
+    if (oldNewest) oldNewest.classList.remove("newest");
+
     let listItem = document.createElement("li");
     listItem.classList.add("entry");
+    listItem.classList.add("newest");
+    listItem.classList.add("fade-in");
     listItem.innerHTML = `
         <div class="character-bubble">
             <div class="response-image ${randomResponse.class}">
@@ -76,7 +87,7 @@ function scrambleAndSave() {
             <h3 class="scrambled-text" data-original="${input}">${scrambled}</h3>
         </div>
     `;
-    historyList.appendChild(listItem);
+    historyList.insertBefore(listItem, historyList.firstChild);
 
     listItem.scrollIntoView({ behavior: 'smooth', block: 'start' });
 //scrolls to the response
