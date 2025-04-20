@@ -261,14 +261,16 @@ button:hover{
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
-	#resetlink{
-		font-family: var(--font-1);
-		text-decoration: underline;
-		font-weight: 500;
-	}
-	#resetlink:hover{
-		color: var(--color-pink);
-	}
+}
+
+#reset-link{
+	font-family: var(--font-1);
+	text-decoration: underline;
+	font-weight: 500;
+}
+
+#reset-link:hover{
+	color: var(--color-pink);
 }
 
 #secret-list{
@@ -394,43 +396,6 @@ button:hover{
 	}
 }
 
-	/* Question Area */
-
-/* .questions{
-	padding: var(--size-3);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-color: var(--color-dark);
-}
-
-.one-question{
-	padding: var(--size-1);
-}
-
-#answers-list{
-	ul{
-		margin: 0;
-	}
-	li{
-		font-family: var(--font-2);
-		padding: var(--size-2);
-		color: var(--color-dark);
-		background-color: var(--color-light);
-		border-radius: 500px;
-		margin: var(--size-1);
-		width: 300px;
-		height: 300px;
-		text-align: center;
-		display: flex;
-		flex-direction: column;
-		gap: 4px;
-		align-items: center;
-		justify-content: center;
-	}
-} */
-
 	/*  Footer  */
 
 #footer{
@@ -551,14 +516,15 @@ button:hover{
 		padding-bottom: var(--size-1);
 		padding-left: 0px;
 		padding-top: 0px;
-			#resetlink:hover{
-				color: var(--color-pink);
-			}
 		}
-		#resetlink{
-			margin-left: var(--size-1);
-			margin-top: 1px;
-		}
+
+	#reset-link{
+		margin-top: 1px;
+	}
+
+	#reset-link:hover{
+		color: var(--color-pink);
+	}
 
 	#secret-list{
 		display: grid;

@@ -73,15 +73,34 @@ function scrambleAndSave() {
         </div>
         <div>
             <h3 class="label">Your <em>hidden</em> secret</h3>
-            <h3>${scrambled}</h3>
+            <h3 class="scrambled-text" data-original="${input}">${scrambled}</h3>
         </div>
     `;
     historyList.appendChild(listItem);
 
     listItem.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    
+//scrolls to the response
+
+let scrambledEl = listItem.querySelector(".scrambled-text");
+
+scrambledEl.addEventListener("mouseenter", function () {
+    this.textContent = this.dataset.original;
+});
+
+scrambledEl.addEventListener("mouseleave", function () {
+    this.textContent = scrambled;
+});
+//unscrambles the secret
+
     document.getElementById("wordInput").value = "";
+    document.getElementById("reset-link").style.display = "inline";
 }
+
+document.getElementById("reset-link").addEventListener("click", function (e) {
+    e.preventDefault();
+    document.getElementById("secret-list").innerHTML = "";
+    this.style.display = "none";
+});
 
 document.getElementById("jumbleForm").addEventListener("submit", function(event) {
     event.preventDefault();
