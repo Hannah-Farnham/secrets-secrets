@@ -180,6 +180,11 @@ button{
 	border: var(--color-dark) solid 1px;
 }
 
+button:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
 .button-with-text{
 	svg{
 		padding-right: 8px;
@@ -246,7 +251,7 @@ button:hover{
 }
 
 #secrets-reveal{
-	height: 100vh;
+	height: 80vh;
 	h3{
 		color: var(--color-light);
 	}
@@ -254,13 +259,6 @@ button:hover{
 		margin-top: var(--size-1);
 		border: var(--color-light) solid 1px;
 	}
-}
-
-#reveal-title{
-	padding: var(--size-1);
-	display: flex;
-	flex-direction: column;
-	gap: 8px;
 }
 
 #reset-link{
@@ -511,15 +509,12 @@ button:hover{
 		}
 	}
 
-	#reveal-title{
+	#reset-link-container{
+		display: flex;
 		flex-direction: row;
-		padding-bottom: var(--size-1);
-		padding-left: 0px;
-		padding-top: 0px;
-		}
-
-	#reset-link{
-		margin-top: 1px;
+		align-items: center;
+		justify-content: center;
+		padding-top: var(--size-1);
 	}
 
 	#reset-link:hover{

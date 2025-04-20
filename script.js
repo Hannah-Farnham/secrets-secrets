@@ -111,4 +111,3 @@ document.getElementById("jumbleForm").addEventListener("submit", function(event)
     event.preventDefault();
     scrambleAndSave();
 });
-
