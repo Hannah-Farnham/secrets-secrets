@@ -89,8 +89,11 @@ function scrambleAndSave() {
     `;
     historyList.insertBefore(listItem, historyList.firstChild);
 
-    listItem.scrollIntoView({ behavior: 'smooth', block: 'start' });
-//scrolls to the response
+    const yOffset = -400;
+    const y = listItem.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    
+    window.scrollTo({ top: y, behavior: 'smooth' });
+    //scrolls to the response
 
 let scrambledEl = listItem.querySelector(".scrambled-text");
 

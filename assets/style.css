@@ -303,7 +303,6 @@ button:hover{
 .yellow{
 	background-color: var(--color-yellow);
 	color: var(--color-dark-yellow);
-	background-image: url('assets/Images/Cat-wipe.svg');
 }
 
 .green{
@@ -360,14 +359,13 @@ button:hover{
 
 .fade-in {
 	opacity: 0;
-	transform: translateY(10px);
-	animation: fadeInUp 3s ease-out forwards;
+	animation: fadeInUp 2s ease-out forwards;
+	animation-delay: 0.3s;
 }
 
 @keyframes fadeInUp {
 	to {
-	opacity: 3;
-	transform: translateY(3);
+	opacity: 1;
 	}
 }
 
@@ -520,7 +518,7 @@ button:hover{
 		flex-direction: row;
 		align-items: center;
 		justify-content: center;
-		padding-top: var(--size-1);
+		padding-top: var(--size-4);
 	}
 
 	#reset-link:hover{
