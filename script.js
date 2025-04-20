@@ -98,8 +98,13 @@ scrambledEl.addEventListener("mouseleave", function () {
 
 document.getElementById("reset-link").addEventListener("click", function (e) {
     e.preventDefault();
-    document.getElementById("secret-list").innerHTML = "";
-    this.style.display = "none";
+
+    const confirmReset = confirm("Are you sure you want to destroy all your secrets?");
+
+    if (confirmReset) {
+        document.getElementById("secret-list").innerHTML = "";
+        this.style.display = "none";
+    }
 });
 
 document.getElementById("jumbleForm").addEventListener("submit", function(event) {
