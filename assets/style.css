@@ -460,6 +460,13 @@ button:hover{
 	}
 }
 
+#reset-link-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: var(--size-4);
+}
+
 	/* Media Queries  */
 
 @media (min-width: 768px) {
@@ -513,17 +520,6 @@ button:hover{
 			padding: 0;
 			padding-bottom: var(--size-1);
 		}
-	}
-
-	#reset-link-container{
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		padding-bottom: var(--size-4);
-	}
-
-	#reset-link:hover{
-		color: var(--color-pink);
 	}
 
 	#secret-list{
