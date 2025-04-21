@@ -264,10 +264,6 @@ button:hover{
 	text-transform: uppercase;
 }
 
-#reset-link:hover{
-	color: var(--color-pink);
-}
-
 #secret-list{
 	padding-left: var(--size-1);
 	padding-right: var(--size-1);
@@ -431,6 +427,12 @@ button:hover{
 		font-size: var(--size-1);
 		text-transform: uppercase;
 	}
+	a:hover{
+		color: var(--color-lime);
+	}
+	#reset-link:hover{
+		color: var(--color-pink);
+	}	
 }
 
 #footer-row{
@@ -457,7 +459,6 @@ button:hover{
 		filter: grayscale(0%);
 	}
 }
-
 
 	/* Media Queries  */
 
@@ -518,7 +519,7 @@ button:hover{
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		padding-top: var(--size-4);
+		padding-bottom: var(--size-4);
 	}
 
 	#reset-link:hover{
