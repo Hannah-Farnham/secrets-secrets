@@ -29,7 +29,7 @@ const secretResponses = [
 
     { text: "Start planning a trip.", class: "pink", img: "assets/Images/Personas/cat-pink-2.png"  },
     { text: "You need a new haircut.", class: "pink", img: "assets/Images/Personas/cat-pink-3.png"  },
-    { text: "Open your camera roll and go to April, 2022.", class: "pink", img: "assets/Images/Personas/cat-pink-1.png"  },
+    { text: "Open your camera roll, and find a photo from 04/02/2022", class: "pink", img: "assets/Images/Personas/cat-pink-1.png"  },
     { text: "You need to get ahead of this. Or behind it. Or beneath a blanket.", class: "pink", img: "assets/Images/Personas/cat-pink-2.png"  },
 
     { text: "You should whisper that to the moon.", class: "blue", img: "assets/Images/Personas/cat-blue-1.png"  },
