@@ -63,6 +63,8 @@ body{
 	color: var(--color-dark-yellow); 
 }
 
+	/* Font Styles */
+
 h1{
 	font-family: var(--font-1);
 	font-weight: 900;
@@ -125,11 +127,48 @@ em{
 	}
 }
 
-			/* Form  */
+#secrets-intro{
+	padding-top: var(--size-4);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.character-intro{
+	display: flex;
+	align-items: center;
+	width: fit-content;
+	margin-bottom: var(--size-2);
+}
+
+.text-bubble-lg{
+	display: inline-block;
+	height: fit-content;
+	padding: 12px;
+	background-color: var(--color-light-grey);
+	color: var(--color-dark);
+	border-radius: 0px 12px 12px 12px;
+	h3{
+		padding-bottom: 0px;
+		font-size: 14px;
+	}
+}
+
+.cat-svg{
+	background-color: var(--color-light);
+	width: 64px;
+	height: 64px;
+	margin-right: var(--size-1);
+	border-radius: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+	/* Form  */
 
 #main-grid{
-background-color: 
-	var(--color-dark);
+	background-color: var(--color-dark);
 }
 
 .form{
@@ -143,13 +182,6 @@ background-color:
 	border-radius: 500px;
 	width: 343px;
 	height: 343px;
-}
-
-.label{
-	padding-right: var(--size-1);
-	font-family: var(--font-3);
-	font-size: var(--size-1);
-	color: var(--color-grey);
 }
 
 input{
@@ -197,44 +229,7 @@ button:hover{
 	}
 }
 
-			/* Secrets  */
-
-.character-intro{
-	display: flex;
-	align-items: center;
-	width: fit-content;
-	margin-bottom: var(--size-2);
-}
-
-.text-bubble-lg{
-	display: inline-block;
-	height: fit-content;
-	padding: 12px;
-	background-color: var(--color-light-grey);
-	color: var(--color-dark);
-	border-radius: 0px 12px 12px 12px;
-	h3{
-		padding-bottom: 0px;
-	}
-}
-
-.cat-svg{
-	background-color: var(--color-light);
-	width: 64px;
-	height: 64px;
-	margin-right: var(--size-1);
-	border-radius: 100px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-#secrets-intro{
-	padding-top: var(--size-4);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
+	/* Secrets  */
 
 #secrets-form{
 	padding: var(--size-8);
@@ -262,7 +257,7 @@ button:hover{
 	padding-right: var(--size-1);
 	display: flex;
 	flex-direction: column;
-	gap: var(--size-3);
+	gap: var(--size-5);
 	li{
 		color: var(--color-light);
 		display: flex;
@@ -362,7 +357,7 @@ button:hover{
 	}
 }
 
-	/* Sticky Link */
+	/* Sticky Button */
 
 #sticky-secrets{
 	position: fixed;
@@ -478,6 +473,8 @@ button:hover{
 
 @media (min-width: 768px) {
 
+		/* Font Styles */
+
 	h1{
 		font-size: var(--size-8);
 		line-height: var(--size-7);
@@ -502,6 +499,12 @@ button:hover{
 	#header-text{
 		padding: var(--size-4);
 		height: 100vh;
+	}
+
+	.text-bubble-lg{
+		h3{
+			font-size: var(--size-1);
+		}
 	}
 
 		/* Secrets */
@@ -532,7 +535,7 @@ button:hover{
 	#secret-list{
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		gap: var(--size-2);
+		gap: var(--size-5);
 		padding: 0;
 		li{
 			color: var(--color-light);
@@ -550,7 +553,7 @@ button:hover{
 		margin-bottom: 0;
 	}
 
-		/* Sticky Link */
+		/* Sticky Button */
 
 	#sticky-secrets{
 		bottom: var(--size-1);
