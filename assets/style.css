@@ -257,13 +257,6 @@ button:hover{
 	}
 }
 
-#reset-link{
-	font-family: var(--font-3);
-	text-decoration: underline;
-	font-size: var(--size-1);
-	text-transform: uppercase;
-}
-
 #secret-list{
 	padding-left: var(--size-1);
 	padding-right: var(--size-1);
@@ -434,10 +427,20 @@ button:hover{
 	a:hover{
 		color: var(--color-lime);
 	}
-	#reset-link:hover{
-		color: var(--color-pink);
-	}	
+	button{
+		color: var(--color-light);
+		background-color: var(--color-dark);
+		background-size: 200%;
+		border: var(--color-light) solid 1px;
+		padding: var(--size-1);
+	}
+	button:hover{
+		color: var(--color-dark);
+		background-color: var(--color-light);
+		border: var(--color-dark) solid 1px;
+	}
 }
+
 
 #footer-row{
 	display: flex;
