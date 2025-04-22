@@ -267,6 +267,9 @@ button:hover{
 #secret-list{
 	padding-left: var(--size-1);
 	padding-right: var(--size-1);
+	display: flex;
+	flex-direction: column;
+	gap: var(--size-3);
 	li{
 		color: var(--color-light);
 		display: flex;
@@ -378,15 +381,16 @@ button:hover{
 	transition: opacity 0.3s ease;
 	button{
 		margin: 0;
-		color: var(--color-dark);
-		background-color: var(--color-light-grey);
-		border: var(--color-dark) solid 1px;
-		padding: 12px;
-		padding-left: 12px;
-		padding-right: 12px;
+		color: var(--color-light);
+		background-color: var(--color-dark);
+		background-size: 200%;
+		border: var(--color-light) solid 1px;
+		padding: var(--size-1);
 	}
 	button:hover{
-		background: radial-gradient(circle, var(--color-lime), var(--color-medium-lime), var(--color-dark-lime));
+		color: var(--color-dark);
+		background-color: var(--color-light);
+		border: var(--color-dark) solid 1px;
 	}
 }
 
@@ -525,7 +529,7 @@ button:hover{
 	#secret-list{
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		gap: var(--size-1);
+		gap: var(--size-2);
 		padding: 0;
 		li{
 			color: var(--color-light);
@@ -568,7 +572,7 @@ button:hover{
 }
 
 
-@media (min-width: 1100px) {
+@media (min-width: 1280px) {
 
 	h1{
 		font-size: var(--size-10);
