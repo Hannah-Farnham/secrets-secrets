@@ -13,7 +13,7 @@
 
 const secretResponses = [
     { text: "Text it to yourself. Schedule it to send next Tuesday. Reflect.", class: "green", img: "assets/Images/Personas/cat-green-1.png" },
-    { text: "Let it marinate. If it still matters tomorrow, we’ll talk.", class: "green", img: "assets/Images/Personas/cat-green-2.png"  },
+    { text: "Create a moodboard that matches how this feels.", class: "green", img: "assets/Images/Personas/cat-green-2.png"  },
     { text: "Put that one in rice.", class: "green", img: "assets/Images/Personas/cat-green-3.png"  },
     { text: "Tell one person you trust.", class: "green", img: "assets/Images/Personas/cat-green-1.png"  },
 
@@ -24,7 +24,7 @@ const secretResponses = [
 
     { text: "Send a text, make a phone call.", class: "orange", img: "assets/Images/Personas/cat-orange-1.png"  },
     { text: "Confront the situation head-on.", class: "orange", img: "assets/Images/Personas/cat-orange-2.png"  },
-    { text: "Slam it in the vault and throw the vault in the ocean.", class: "orange", img: "assets/Images/Personas/cat-orange-3.png"  },
+    { text: "Go on a walk and take three left turns.", class: "orange", img: "assets/Images/Personas/cat-orange-3.png"  },
     { text: "Handle it now, before it handles you.", class: "orange", img: "assets/Images/Personas/cat-orange-1.png"  },
 
     { text: "Start planning a trip.", class: "pink", img: "assets/Images/Personas/cat-pink-2.png"  },
