@@ -33,7 +33,7 @@ const secretResponses = [
     { text: "You need to get ahead of this. Or behind it. Or beneath a blanket.", class: "pink", img: "assets/Images/Personas/cat-pink-2.png"  },
 
     { text: "You should whisper that to the moon.", class: "blue", img: "assets/Images/Personas/cat-blue-1.png"  },
-    { text: "Write it on a piece of paper, then hide it in a book.", class: "blue", img: "assets/Images/Personas/cat-blue-1.png"  },
+    { text: "Shuffle your liked songs. This is your answer.", class: "blue", img: "assets/Images/Personas/cat-blue-1.png"  },
     { text: "This might be your sign to open up—just a little.", class: "blue", img: "assets/Images/Personas/cat-blue-3.png"  },
     { text: "Tell your plant, see if it wilts.", class: "blue", img: "assets/Images/Personas/cat-blue-1.png"  },
 ];
