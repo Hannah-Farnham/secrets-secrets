@@ -139,6 +139,7 @@ em{
 	align-items: center;
 	width: fit-content;
 	margin-bottom: var(--size-2);
+	
 }
 
 .text-bubble-lg{
@@ -154,7 +155,7 @@ em{
 	}
 }
 
-.cat-svg{
+.cat-img{
 	background-color: var(--color-light);
 	width: 64px;
 	height: 64px;
@@ -163,6 +164,9 @@ em{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	img{
+		min-width: 64px;
+	}
 }
 
 	/* Form  */
