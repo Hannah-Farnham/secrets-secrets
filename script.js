@@ -13,14 +13,14 @@
 
 const secretResponses = [
     { text: "Text it to yourself. Schedule it to send next Tuesday. Reflect.", class: "green", img: "assets/Images/Personas/cat-green-1.png" },
-    { text: "Create a moodboard that matches how this feels.", class: "green", img: "assets/Images/Personas/cat-green-2.png"  },
-    { text: "Put that one in rice.", class: "green", img: "assets/Images/Personas/cat-green-3.png"  },
-    { text: "Tell one person you trust.", class: "green", img: "assets/Images/Personas/cat-green-1.png"  },
+    { text: "Create a moodboard that matches how this feels.", class: "green", img: "assets/Images/Personas/cat-green-2.png" },
+    { text: "Learn how to say this in Danish", class: "green", img: "assets/Images/Personas/cat-green-3.png" },
+    { text: "Tell one person you trust.", class: "green", img: "assets/Images/Personas/cat-green-1.png" },
 
     { text: "Say it in a British accent. Suddenly less scary, right?", class: "yellow", img: "assets/Images/Personas/cat-yellow-1.png"  },
     { text: "Write it on a sticky note. Burn the note. Dance around the ashes.", class: "yellow", img: "assets/Images/Personas/cat-yellow-2.png"  },
     { text: "Change your phone wallpaper.", class: "yellow", img: "assets/Images/Personas/cat-yellow-3.png"  },
-    { text: "Go for a walk and whisper it at a stranger.", class: "yellow", img: "assets/Images/Personas/cat-yellow-3.png"  },
+    { text: "Walk until you find a weird rock.", class: "yellow", img: "assets/Images/Personas/cat-yellow-3.png"  },
 
     { text: "Send a text, make a phone call.", class: "orange", img: "assets/Images/Personas/cat-orange-1.png"  },
     { text: "Confront the situation head-on.", class: "orange", img: "assets/Images/Personas/cat-orange-2.png"  },
@@ -29,7 +29,7 @@ const secretResponses = [
 
     { text: "Start planning a trip.", class: "pink", img: "assets/Images/Personas/cat-pink-2.png"  },
     { text: "You need a new haircut.", class: "pink", img: "assets/Images/Personas/cat-pink-3.png"  },
-    { text: "My eyebrows are in orbit.", class: "pink", img: "assets/Images/Personas/cat-pink-1.png"  },
+    { text: "Open your camera roll and go to April, 2022.", class: "pink", img: "assets/Images/Personas/cat-pink-1.png"  },
     { text: "You need to get ahead of this. Or behind it. Or beneath a blanket.", class: "pink", img: "assets/Images/Personas/cat-pink-2.png"  },
 
     { text: "You should whisper that to the moon.", class: "blue", img: "assets/Images/Personas/cat-blue-1.png"  },
