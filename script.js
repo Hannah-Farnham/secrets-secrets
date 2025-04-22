@@ -24,7 +24,7 @@ const secretResponses = [
 
     { text: "Send a text, make a phone call.", class: "orange", img: "assets/Images/Personas/cat-orange-1.png"  },
     { text: "Confront the situation head-on.", class: "orange", img: "assets/Images/Personas/cat-orange-2.png"  },
-    { text: "Go to the grocery store and only buy red items.", class: "orange", img: "assets/Images/Personas/cat-orange-3.png"  },
+    { text: "Go to the grocery store, and buy only buy red items.", class: "orange", img: "assets/Images/Personas/cat-orange-3.png"  },
     { text: "Handle it now, before it handles you.", class: "orange", img: "assets/Images/Personas/cat-orange-1.png"  },
 
     { text: "Start planning a trip.", class: "pink", img: "assets/Images/Personas/cat-pink-2.png"  },
