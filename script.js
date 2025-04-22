@@ -14,7 +14,7 @@
 const secretResponses = [
     { text: "Text it to yourself. Schedule it to send next Tuesday. Reflect.", class: "green", img: "assets/Images/Personas/cat-green-1.png" },
     { text: "Create a moodboard that matches how this feels.", class: "green", img: "assets/Images/Personas/cat-green-2.png" },
-    { text: "Learn how to say this in Danish", class: "green", img: "assets/Images/Personas/cat-green-3.png" },
+    { text: "Learn how to say this in German.", class: "green", img: "assets/Images/Personas/cat-green-3.png" },
     { text: "Tell one person you trust.", class: "green", img: "assets/Images/Personas/cat-green-1.png" },
 
     { text: "Say it in a British accent. Suddenly less scary, right?", class: "yellow", img: "assets/Images/Personas/cat-yellow-1.png"  },
